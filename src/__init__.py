@@ -11,6 +11,6 @@ app: FastAPI = FastAPI(
 )
 
 
-@app.get("/")
+@app.get(path="/")
 async def ping() -> dict[str, str]:
     return {"msg": "Pong"}
