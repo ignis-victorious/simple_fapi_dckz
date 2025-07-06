@@ -7,6 +7,6 @@ from fastapi import FastAPI
 
 app: FastAPI = FastAPI(title='simple_fastapi_todos', description='Learning how to dockerize FastAPI')
 
-
-
-
+@app.get('/')
+async def   ping():
+    return {"msg":"Pong"}
